@@ -1,5 +1,5 @@
 {
-  "name": "gorans web app HW3",
+  "name": "bitstarter",
   "version": "0.0.2",
   "description": "HW3 that uses node.js via ephemeral file storage.",
   "repository": "git://github.com/Molnfront/bitstarter",
