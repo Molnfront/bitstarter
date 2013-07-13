@@ -9,7 +9,7 @@ var filePath = path.join(__dirname, 'index.html');
 var readFile = fs.readFileSync(filePath); 
 
 //var test = readFile.toString('utf8', 0, readFile.length);
-//console.log(test);
+console.log(readFile);
 //var readBuffer = new Buffer(readFile);
 //readBuffer.write(readFile, 0);
 
