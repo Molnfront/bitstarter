@@ -6,7 +6,7 @@ var app = express(express.logger());
 var filePath = path.join(__dirname, 'index.html');
 //console.log(filePath);
 //var theFile = "index.html";
-var readFile = fs.readFileSync(filePath); 
+var readFile = fs.readFileSync(filePath, 'UTF8'); 
 
 //var test = readFile.toString('utf8', 0, readFile.length);
 console.log(readFile);
