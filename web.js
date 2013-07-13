@@ -8,6 +8,6 @@ var readFile = fs.readFileSync(filePath);
 var readBuffer = new Buffer(readFile);
 //readBuffer.write(readFile, 0);
 app.get('/', function (request, response) {
-    console.log(response);
+   // console.log(response);
   response.send(readBuffer.toString('utf8', 0, readBuffer.length));
 });
