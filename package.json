@@ -1,9 +1,9 @@
 {
-  "name": "görans web app HW3",
+  "name": "gorans web app HW3",
   "version": "0.0.2",
   "description": "HW3 that uses node.js via ephemeral file storage.",
   "repository": "git://github.com/Molnfront/bitstarter",
-  "author": "Göran Svensson (goran@nordicwingsail.com)",
+  "author": "Goran Svensson (goran@nordicwingsail.com)",
   "engines": {
     "node": "0.8.x",
     "npm": "1.1.x"
