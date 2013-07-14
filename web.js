@@ -15,6 +15,6 @@ console.log(readFile);
 
 app.get('/', function (request, response) {
    console.log(response);
-  response.send(readFile.toString('utf8', 0, readFile.length));
+  response.send(readFile.toString());
 });
 
