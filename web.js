@@ -12,9 +12,8 @@ var readFile = fs.readFileSync(filePath);
 //console.log(readFile);
 var readBuffer = new Buffer(readFile);
 //readBuffer.write(readFile, 0);
-
+console.log(readBuffer.toString());
 app.get('/', function (request, response) {
-   console.log(readBuffer.toString());
-  response.send(readBuffer.toString());
+response.send(readBuffer.toString());
 });
 
