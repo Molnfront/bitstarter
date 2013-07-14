@@ -2,9 +2,12 @@
 var fs = require('fs'),
     express = require('express'),
     app = express();
-app.get('/', function (request, response) { });
-    //var path = require('path');
-    //response.send('test text');
+
+app.get('/', function (request, response) { 
+    var path = require('path');
+        response.send('test text');
+    
+});    
         //filePath = path.join(__dirname, 'index.html');
 //console.log(filePath);
 //var theFile = "index.html";
@@ -16,3 +19,7 @@ app.get('/', function (request, response) { });
 //console.log(readBuffer.toString());
 //response.send(readBuffer.toString());
     //response.send(fs.readFileSync(path.join(__dirname, 'index.html')).toString());
+var port = process.env.PORT || 5000;
+app.listen(port, function() {
+  console.log("Listening on " + port);
+});
