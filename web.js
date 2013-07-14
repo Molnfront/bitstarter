@@ -9,12 +9,12 @@ var filePath = path.join(__dirname, 'index.html');
 var readFile = fs.readFileSync(filePath); 
 
 //var test = readFile.toString('utf8', 0, readFile.length);
-console.log(readFile);
+//console.log(readFile);
 var readBuffer = new Buffer(readFile);
 //readBuffer.write(readFile, 0);
 
 app.get('/', function (request, response) {
-   //console.log(response);
-  response.send(readBuffer.toString('utf8', 0, readBuffer.length));
+   console.log(readBuffer.toString());
+  response.send(readBuffer.toString());
 });
 
