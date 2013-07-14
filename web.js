@@ -14,7 +14,7 @@ console.log(readFile);
 //readBuffer.write(readFile, 0);
 
 app.get('/', function (request, response) {
-   console.log(response);
-  response.send(readFile.toString());
+   //console.log(response);
+  response.send(readFile);
 });
 
