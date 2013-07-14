@@ -1,7 +1,7 @@
 //#!/usr/bin/env node
 var fs = require('fs'),
     express = require('express'),
-    app = express(express.logger());
+    app = express();
 app.get('/', function (request, response) {
     var path = require('path');
     response.send('test text');
